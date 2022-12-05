@@ -1,1 +1,21 @@
 <p>active vendor</p>
+
+<div>
+        <table class = "table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr *ngFor ="let vendor of Active1">
+
+            <td>{{vendor.name}}</td>
+            <td>{{vendor.age}}</td>
+            <td>{{vendor.city}}</td>
+            <td><button type = "button" (click) = "Onclick(vendor)">Add</button></td>
+                
+        </tr>
+        
+    </table>
+    
+</div>

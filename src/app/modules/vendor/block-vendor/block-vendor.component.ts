@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Model } from 'src/app/model';
+
 
 @Component({
   selector: 'app-block-vendor',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlockVendorComponent implements OnInit {
 
+  @Input() BList?: Model[];
   constructor() { }
 
   ngOnInit(): void {
